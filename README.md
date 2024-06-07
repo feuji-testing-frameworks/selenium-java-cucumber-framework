@@ -54,3 +54,5 @@ selenium-java-cucumber-framework
     `mvn clean install`
 
 3. **Running Tests** : For running the tescases using the following command in command prompt or if we use IDE right click on testng.xml file and select Run As then click on TestNG suite
+
+   `mvn test`
