@@ -1,6 +1,6 @@
 package com.cucumber.stepdefinitions;
 
-import com.cucumber.pages.uipages.SideBarValidation;
+import com.cucumber.pages.ui.SideBarValidation;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;

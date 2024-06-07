@@ -1,4 +1,4 @@
-package com.cucumber.pages.uipages;
+package com.cucumber.pages.ui;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

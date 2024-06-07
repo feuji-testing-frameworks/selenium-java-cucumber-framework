@@ -2,7 +2,7 @@ package com.cucumber.stepdefinitions.ui;
 
 import static org.testng.Assert.assertTrue;
 
-import com.cucumber.pages.uipages.AddToCartPage;
+import com.cucumber.pages.ui.AddToCartPage;
 import com.cucumber.stepdefinitions.SauceDemoLoginTest;
 
 import io.cucumber.java.en.And;

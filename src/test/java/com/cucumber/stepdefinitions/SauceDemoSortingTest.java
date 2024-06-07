@@ -3,7 +3,7 @@ package com.cucumber.stepdefinitions;
 
 import static org.testng.Assert.assertEquals;
 
-import com.cucumber.pages.uipages.HomePage;
+import com.cucumber.pages.ui.HomePage;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
