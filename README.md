@@ -15,28 +15,28 @@ Before you begin, ensure you have the following installed:
 ## Project Structure
 
 ├── src
-│   ├── test
-│   │   ├── java
-│   │   │   └── com
-│   │   │       └── cucumber
-│   │   │           ├── pages
-│   │   │           │   └── ui
-│   │   │           │       ├── AddToCartPage.java
-│   │   │           │       ├── HomePage.java
-│   │   │           │       ├── LoginPage.java
-│   │   │           │       └── SideBarValidation.java
-│   │   │           ├── stepdefinitions
-│   │   │           │   └── ui
-│   │   │           │       ├── SauceDemoLoginTest.java
-│   │   │           │       ├── SauceDemoCheckoutTest.java
-│   │   │           │       ├── SauceDemoSideBarTest.java
-│   │   │           │       ├── SauceDemoSortingTest.java
-│   │   │           └── testrunner
-│   │   │               └── TestRunner.java
-│   │   └── resources
-│   │       └── features
-│   │           ├── login.feature
-│   │           └── add_to_cart.feature
+│ ├── test
+│ │ ├── java
+│ │ │ └── com
+│ │ │ └── cucumber
+│ │ │ ├── pages
+│ │ │ │ └── ui
+│ │ │ │ ├── AddToCartPage.java
+│ │ │ │ ├── HomePage.java
+│ │ │ │ ├── LoginPage.java
+│ │ │ │ └── SideBarValidation.java
+│ │ │ ├── stepdefinitions
+│ │ │ │ └── ui
+│ │ │ │ ├── SauceDemoLoginTest.java
+│ │ │ │ ├── SauceDemoCheckoutTest.java
+│ │ │ │ ├── SauceDemoSideBarTest.java
+│ │ │ │ ├── SauceDemoSortingTest.java
+│ │ │ └── testrunner
+│ │ │ └── TestRunner.java
+│ │ └── resources
+│ │ └── features
+│ │ ├── login.feature
+│ │ └── add_to_cart.feature
 ├── pom.xml
 └── testng.xml
 
