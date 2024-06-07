@@ -1,4 +1,4 @@
-package com.cucumber.stepdefinitions;
+package com.cucumber.testrunner;
 
 import org.testng.annotations.DataProvider;
 

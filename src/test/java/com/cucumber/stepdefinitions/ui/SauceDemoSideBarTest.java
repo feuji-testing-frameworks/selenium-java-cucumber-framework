@@ -1,4 +1,4 @@
-package com.cucumber.stepdefinitions;
+package com.cucumber.stepdefinitions.ui;
 
 import com.cucumber.pages.ui.SideBarValidation;
 

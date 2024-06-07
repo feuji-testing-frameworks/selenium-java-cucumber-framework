@@ -1,9 +1,0 @@
-com\cucumber\stepdefinitions\SauceDemoCheckoutTest.class
-com\cucumber\pages\AddToCartPage.class
-com\cucumber\pages\LoginPage.class
-com\cucumber\stepdefinitions\TestRunner.class
-com\cucumber\pages\SideBarValidation.class
-com\cucumber\stepdefinitions\SauceDemoSideBarTest.class
-com\cucumber\stepdefinitions\SauceDemoSortingTest.class
-com\cucumber\pages\HomePage.class
-com\cucumber\stepdefinitions\SauceDemoLoginTest.class

@@ -1,4 +1,4 @@
-package com.cucumber.stepdefinitions;
+package com.cucumber.stepdefinitions.ui;
 
 
 import static org.testng.Assert.assertEquals;
