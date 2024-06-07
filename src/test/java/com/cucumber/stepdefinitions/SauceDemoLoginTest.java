@@ -7,8 +7,8 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.cucumber.pages.AddToCartPage;
-import com.cucumber.pages.LoginPage;
+import com.cucumber.pages.uipages.AddToCartPage;
+import com.cucumber.pages.uipages.LoginPage;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
