@@ -6,6 +6,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import com.cucumber.pages.ui.AddToCartPage;
 import com.cucumber.pages.ui.LoginPage;
@@ -26,7 +27,10 @@ public class SauceDemoLoginTest {
     public static WebDriver getDriver() {
         if (webDriverThreadLocal.get() == null) {
             // Initialize WebDriver for the current thread
-            WebDriver driver = new ChromeDriver();
+        	WebDriverManager.chromedriver().setup();
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--remote-allow-origins=*");
+            ChromeDriver driver = new ChromeDriver(chromeOptions);      
             webDriverThreadLocal.set(driver);
         }
         return webDriverThreadLocal.get();

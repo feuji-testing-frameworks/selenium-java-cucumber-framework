@@ -3,7 +3,7 @@
 <suite name="CucumberTestSuite" >
   <test name="CucumberTests" parallel="methods" thread-count="3">
 	  <classes>
-		  <class name="com.cucumber.stepdefinitions.TestRunner"></class>
+		  <class name="com.cucumber.testrunner.TestRunner"></class>
 	  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

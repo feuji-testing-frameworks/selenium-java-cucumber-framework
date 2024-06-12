@@ -6,7 +6,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "src/test/resources/features",
-		glue = {"com.cucumber.stepdefinitions"},
+		glue = {"com.cucumber.stepdefinitions","com.cucumber.base"},
 		monochrome = true,
 		plugin = {"pretty" , "html:target/Reports/cucumberReport.html"}
 )
@@ -17,5 +17,5 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	public Object[][] scenarios(){
 		return super.scenarios();
 	}
-
+	
 }
