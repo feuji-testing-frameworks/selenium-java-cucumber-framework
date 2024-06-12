@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is designed for testing a UI using Selenium WebDriver with the TestNG and cucumber framework in Java. It allows you to automate UI testing.
+This project is designed for testing a UI, API using Selenium WebDriver and RestAssured with the TestNG and cucumber framework in Java. It allows you to automate UI,API testing.
 
 ## Prerequisites
 
@@ -21,6 +21,8 @@ selenium-java-cucumber-framework
 │   │   ├── java
 │   │   │   └── com
 │   │   │       └── cucumber
+│   │   │           ├── base
+│   │   │           │   └── Base.java
 │   │   │           ├── pages
 │   │   │           │   └── ui
 │   │   │           │       ├── AddToCartPage.java
@@ -28,6 +30,8 @@ selenium-java-cucumber-framework
 │   │   │           │       ├── LoginPage.java
 │   │   │           │       └── SideBarValidation.java
 │   │   │           ├── stepdefinitions
+│   │   │           │   ├── api
+│   │   │           │   │   └── BookingSteps.java
 │   │   │           │   └── ui
 │   │   │           │       ├── SauceDemoLoginTest.java
 │   │   │           │       ├── SauceDemoCheckoutTest.java
@@ -37,17 +41,25 @@ selenium-java-cucumber-framework
 │   │   │               └── TestRunner.java
 │   │   └── resources
 │   │       └── features
-│   │           ├── login.feature
-│   │           └── add_to_cart.feature
+│   │           ├── api
+│   │           │   └── booking.feature
+│   │           ├── ui
+│   │           │   ├── login.feature
+│   │           │   ├── add_to_cart.feature
+│   │           │   ├── sorting.feature
+│   │           │   └── sidebarvalidation.feature
+│   └── reports
+│       └── Extentreport.html
 ├── pom.xml
 └── testng.xml
+
 ```
 
 ## Setup Instruction
 
 1. **Clone the Project** : Clone the project repository from GitHub using the following command:
 
-    `https://github.com/feuji-testing-frameworks/restassured-mockapi-framework.git`
+    `https://github.com/feuji-testing-frameworks/selenium-java-cucumber-framework.git`
 
 2. **Install dependencies** : If you are using IDE it will automatically install dependecies present in pom.xml or if we use command prompt for download the dependencies using the following command
 
