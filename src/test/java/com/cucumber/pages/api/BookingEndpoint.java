@@ -39,6 +39,16 @@ public class BookingEndpoint {
                 .when()
                 .put(Routes.booking_update_url);
     }
+    
+    public static Response patchBookingById(int bookingid,Booking booking,String token) {
+    	return given()
+    			.header("Cookie", "token=" + token)
+    			.contentType(ContentType.JSON)
+    			.pathParam("id", bookingid)
+    			.body(booking)
+    			.when()
+    			.patch(Routes.booking_update_url);
+    }
 
     public static Response deleteBooking(int bookingid,String token) {
         return given()
