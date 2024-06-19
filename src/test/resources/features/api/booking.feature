@@ -7,7 +7,12 @@ Feature: Booking API Tests
     Given I have a booking payload
     When I create a booking
     Then the booking is created successfully
-
+   
+	Scenario: Create Booking
+		Given I have a booking payload
+    When I create a booking
+    Then the booking is created successfully
+	
   Scenario: Get Booking By Id
     Given I have a booking id
     When I get the booking by id
@@ -17,6 +22,11 @@ Feature: Booking API Tests
     Given I have a booking id and updated booking payload
     When I update the booking by id
     Then the booking is updated successfully
+    
+  Scenario: Patch Booking By Id
+    Given I have a booking id and patch booking payload
+    When I patch the booking by id
+    Then the booking is patched successfully
 
   Scenario: Delete Booking
     Given I have a booking id

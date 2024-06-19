@@ -20,6 +20,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.cucumber.pages.api.Booking;
 import com.cucumber.pages.api.BookingDates;
 import com.cucumber.pages.api.CreateToken;
+import com.cucumber.pages.mockapi.MockServer;
 import com.github.javafaker.Faker;
 
 import io.cucumber.java.After;
@@ -33,6 +34,7 @@ public class Base{
     public static ExtentTest test;
     private static ExtentReports extent;
     private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+    private MockServer mockServer;
   
 
     @Before
@@ -49,6 +51,18 @@ public class Base{
         }
         ExtentTest test = extent.createTest(scenario.getName(), scenario.getId());
         extentTest.set(test);
+    }
+
+    @Before("@MockFeature")
+    public void beforeScenario() {
+        mockServer = new MockServer();
+        mockServer.startServer();
+        System.out.println(mockServer.getPort());
+    }
+
+    @After("@MockFeature")
+    public void afterScenario() {
+        mockServer.stopServer();
     }
 
     @After
