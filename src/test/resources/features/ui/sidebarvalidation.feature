@@ -1,6 +1,6 @@
 Feature: This is sauce demo application side bar validation
 
-  Scenario: Login with valid credentials and checking the elements present in side bar
+  Scenario Outline: Login with valid credentials and checking the elements present in side bar
     Given User is on the sauce demo login page
     When User enters the <username> and <password>
     And Click on login button

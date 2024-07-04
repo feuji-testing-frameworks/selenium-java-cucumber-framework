@@ -1,6 +1,6 @@
 Feature: Sauce demo application Add to cart
 
-  Scenario: As a user, I can add product to the cart and checkout the product
+  Scenario Outline: As a user, I can add product to the cart and checkout the product
     Given User is on the sauce demo login page
     When User enters the <username> and <password>
     And Click on login button

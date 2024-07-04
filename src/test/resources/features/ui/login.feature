@@ -1,6 +1,6 @@
 Feature: This is sauce demo login page
 
-  Scenario: Login with valid credentials
+  Scenario Outline: Login with valid credentials
     Given User is on the sauce demo login page
     When User enters the <username> and <password>
     And Click on login button
