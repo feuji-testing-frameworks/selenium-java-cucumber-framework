@@ -1,18 +1,10 @@
 package com.cucumber.stepdefinitions.api;
 
 import static org.testng.Assert.assertEquals;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.cucumber.base.Base;
 import com.cucumber.pages.api.Booking;
 import com.cucumber.pages.api.BookingDates;
 import com.cucumber.pages.api.BookingEndpoint;
 import com.cucumber.pages.api.CreateToken;
-import com.cucumber.testrunner.TestRunner;
 import com.github.javafaker.Faker;
 
 import io.cucumber.java.en.Given;
@@ -76,7 +68,7 @@ public class BookingSteps {
 
 	@Given("I have a booking id")
 	public void booking_id() {
-	     assert bookingId>0;
+		assert bookingId > 0;
 	}
 
 	@When("I get the booking by id")
@@ -113,7 +105,7 @@ public class BookingSteps {
 	public void booking_updated() {
 		assertEquals(response.getStatusCode(), 200);
 	}
-	
+
 	@Given("I have a booking id and patch booking payload")
 	public void booking_id_and_patched_booking_payload() {
 		faker = new Faker();

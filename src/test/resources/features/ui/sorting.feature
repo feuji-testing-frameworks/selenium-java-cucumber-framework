@@ -1,6 +1,6 @@
 Feature: Sauce demo application
 
-  Scenario: Login with valid credentials and check the sorting function
+  Scenario Outline: Login with valid credentials and check the sorting function
     Given User is on the sauce demo login page
     When User enters the <username> and <password>
     And Click on login button
